@@ -1,0 +1,117 @@
+.nav {
+  width: 100%;
+  background-color: #425f57;
+}
+.navdiv {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  padding: 24px;
+  justify-content: center;
+}
+
+.ipdiv {
+  width: 45%;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+.btnnav {
+  width: 100%;
+  padding: 10px;
+  background-color: goldenrod;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.btndiv {
+  width: 10%;
+}
+
+.cont {
+  background-color: #cfff8d;
+  padding-bottom: 20px;
+}
+.contdiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #cfff8d;
+}
+.contdiv > div {
+  width: 300px;
+  height: 350px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 6px;
+}
+.contdiv > div:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.imgdiv {
+  width: 100%;
+  height: 150px;
+}
+.imgdiv > img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.titlediv {
+  padding: 10px;
+}
+.title {
+  font-size: 13px;
+  text-align: start;
+  font-weight: bolder;
+}
+.para {
+  font-size: 11px;
+  text-align: start;
+  margin-top: 4px;
+}
+.author {
+  font-size: 12px;
+  text-align: start;
+  padding: 0px 10px;
+  font-weight: bold;
+}
+.sourcename {
+  text-align: start;
+  padding: 0px 10px;
+  font-size: 13px;
+}
+
+.paginationbtndiv {
+  margin: auto;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+.paginationbtndiv > button {
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  padding: 10px 23px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .ipdiv {
+    width: 75%;
+  }
+  .btndiv {
+    width: 25%;
+  }
+}

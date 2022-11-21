@@ -1,0 +1,30 @@
+
+.contentmaindiv{
+    background-color: #CFFF8D;
+    width:100vw;
+    height:100vh;
+}
+.contentdiv{
+    position: absolute;
+    left:50%;
+    top:50%;
+  cursor: pointer;
+}
+
+/* ENDLESS ROTATE */
+.rotate{
+    animation: rotate 1.5s linear infinite; 
+    color:#000000;
+  }
+  @keyframes rotate{
+    to{ transform: rotate(360deg); }
+  }
+  
+  
+  /* SPINNER JUST FOR DEMO */
+  .spinner{
+    display:inline-block; width: 50px; height: 50px;
+    border-radius: 50%;
+    box-shadow: inset -2px 0 0 2px #0bf;
+    font-weight: bold;
+  }
