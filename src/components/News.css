@@ -99,12 +99,13 @@ input {
   justify-content: center;
 }
 .paginationbtndiv > button {
-  background-color: goldenrod;
+  background-color: #425f57;
   color: white;
-  border: none;
+  /* border: none; */
   padding: 10px 23px;
   margin-left: 10px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 600px) {
