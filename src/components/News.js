@@ -13,8 +13,12 @@ const News = () => {
   const news = useSelector((store) => store.news);
 
   useEffect(() => {
-    dispatch(fetchNews(""));
+    dispatch(fetchNews("", 0));
   }, []);
+
+  useEffect(() => {
+    dispatch(fetchNews(cato, page));
+  }, [page]);
 
   const handleSelectedNews = (data) => {
     dispatch(getSelectedNews(data));
@@ -22,7 +26,8 @@ const News = () => {
   };
 
   const handleCato = () => {
-    dispatch(fetchNews(cato));
+    setPage(1);
+    dispatch(fetchNews(cato, page));
   };
 
   const handlePage = (val) => {
@@ -87,7 +92,7 @@ const News = () => {
             prev
           </button>
           <button
-            disabled={page >= 5 ? true : false}
+            disabled={page >= 4 ? true : false}
             onClick={() => handlePage(1)}
           >
             next

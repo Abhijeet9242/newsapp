@@ -17,6 +17,7 @@ export const fetchNews = (cato, page) => (dispatch) => {
         console.log(err.response.data);
       });
   } else {
+    console.log(page + "page");
     link = `https://newsapi.org/v2/top-headlines?country=in&category=${cato}&page=${page}&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`;
     axios
       .get(link)
