@@ -44,7 +44,7 @@ const News = () => {
           <div className="ipdiv">
             <input
               type="text"
-              placeholder="enter category"
+              placeholder="enter keyword..."
               onChange={(e) => setCato(e.target.value)}
             />
           </div>
